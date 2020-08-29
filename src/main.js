@@ -11,9 +11,8 @@ fetch(API_URL).then(response => response.text())
       const {photo, property_type, name, price}= element;
        // row
       const row = document.getElementById("row");
-      //div
+      //div col
       const div = document.createElement("div");
-      //col
       div.className = "col-md-4";
       //card
       const card = document.createElement('card');
@@ -40,15 +39,8 @@ fetch(API_URL).then(response => response.text())
       const propertyPrice = document.createElement('p');
       propertyPrice.className = "property-price";  
       propertyPrice.innerHTML = `Preço: R$ ${price},00`;  
-      // row
-      //   div
-      //     card
-      //         image
-      //       cardBody
-      //         cardText
-      //           propertyType
-      //           propertyName
-      //           propertyPrice
+      
+      //Criando os elementos...
       row.appendChild(div);
       div.appendChild(card);
       card.appendChild(image);
